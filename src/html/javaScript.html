@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercícios JS</title>
+  <link rel="stylesheet" href="../css/javaScript.css">
+</head>
+<body>
+
+  <header>
+      <nav class="navbar">  
+          <ul class="listaNavbar">
+            <li class="linksNavbar linksEsquerda" id="homeLink"><a href="#">Home</a></li>
+            <li class="linksNavbar linksEsquerda"><a href="#">Mais informações</a></li>
+            <li class="linksNavbar linksDireita"><a href="#">Algoritmo</a></li>
+            <li class="linksNavbar linksDireita"><a href="#">HTML e CSS</a></li>
+            <li class="linksNavbar linksDireita"><a href="./src/html/javaScript.html">Javascript</a></li>
+          </ul>
+      </nav>
+    </header>
+
+  <h1>Escolha um exercício</h1>
+  <button onclick="mostrarExercicio(1)" class="botaoExercicio">Exercício 1</button>
+  <button onclick="mostrarExercicio(2)" class="botaoExercicio">Exercício 2</button>
+
+  <div id="exercicio1" class="exercicio">
+    <div>
+
+
+      <h1 id="tituloExercicio">Aprendendo o básico!</h1>
+
+      <p id="descricaoExercicio">Faça uma conta básica que resulte em 5!
+        Para apresentar o resultado, escreva: "return" e na frente o resultado;
+        <br>
+        <br>
+        Exemplo: return 1+4
+      </p>
+
+      <textarea class="editorCodigo" id="editor" rows="10" cols="50" placeholder="Digite seu código JavaScript aqui..."></textarea>
+
+      <button id="runBtn" onclick="rodarPlayground(1)">Rodar Código</button>
+
+      <div>
+        <pre id="output"></pre>
+      </div>
+    </div>
+    <div id="continuar1" class="continuar">
+      <button onclick="mostrarExercicio(2)">Próximo exercício</button>
+    </div>
+  </div>
+
+
+
+  <div id="exercicio2" class="exercicio">
+    <h2>Exercício 2</h2>
+    <p>Esse é o conteúdo do exercício 2.</p>
+  </div>
+
+  <script type="module" src="../ts/main.javaScript.ts"></script>
+</body>
+</html>
