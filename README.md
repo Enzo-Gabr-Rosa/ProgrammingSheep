@@ -6,3 +6,4 @@ Isa, essa bomba aqui é pra gente marcar resumida mente as alterações que nós
 16/08 - Enzo - Mexi nos exercícios
 
 tendeu? Ai vai salvando e alterando
+------------------------------------------------------------------
