@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercícios JS</title>
+  <link rel="stylesheet" href="../css/javaScript.css">
+</head>
+<body>
+
+  <header>
+      <nav class="navbar">  
+          <ul class="listaNavbar">
+            <li class="linksNavbar linksEsquerda" id="homeLink"><a href="#">Home</a></li>
+            <li class="linksNavbar linksEsquerda"><a href="#">Mais informações</a></li>
+            <li class="linksNavbar linksDireita"><a href="#">Algoritmo</a></li>
+            <li class="linksNavbar linksDireita"><a href="#">HTML e CSS</a></li>
+            <li class="linksNavbar linksDireita"><a href="./src/html/javaScript.html">Javascript</a></li>
+          </ul>
+      </nav>
+    </header>
+
+  <h1>Escolha um exercício</h1>
+  <button onclick="mostrarExercicio(1)" class="botaoExercicio">Exercício 1</button>
+  <button onclick="mostrarExercicio(2)" class="botaoExercicio">Exercício 2</button>
+  <button onclick="mostrarExercicio(3)" class="botaoExercicio">Exercício 3</button>
+
+  <div id="exercicio1" class="exercicio">
+    <div>
+
+
+      <h1 id="tituloExercicio">Aprendendo o básico!</h1>
+
+      <p id="descricaoExercicio">Faça uma conta básica que resulte em 5!
+        Para apresentar o resultado, escreva: "return" e na frente o resultado;
+        <br>
+        <br>
+        Exemplo: return 1+4
+      </p>
+
+      <textarea class="editorCodigo" id="editor1" rows="10" cols="50" placeholder="Digite seu código JavaScript aqui..."></textarea>
+
+      <button id="runBtn" onclick="rodarPlayground(1)">Rodar Código</button>
+
+      <div>
+        <pre id="output1"></pre>
+      </div>
+    </div>
+    <div id="continuar1" class="continuar">
+      <button onclick="mostrarExercicio(2)">Próximo exercício</button>
+    </div>
+  </div>
+
+
+
+  <div id="exercicio2" class="exercicio">
+
+
+      <h1 id="tituloExercicio">Variáveis.</h1>
+
+      <p id="descricaoExercicio">Agora vamos aprender a usar uma variável, mas primeiro, o que é uma váriavel?
+        Pense nela como uma caixinha, nessa caixinha vamos colocar um dado(como um número ou texto por exemplo),
+        esse dado ficara armazenado na variavel, e sempre que quisermos pegar esse dado, é só chamar a caixinha.
+        <br>
+        <br>
+        Exemplo: var variavel = 1
+        <br>
+        return variavel;
+      </p>
+
+      <textarea class="editorCodigo" id="editor2" rows="10" cols="50" placeholder="Digite seu código JavaScript aqui..."></textarea>
+
+      <button id="runBtn" onclick="rodarPlayground(2)">Rodar Código</button>
+
+      <div>
+        <pre id="output2"></pre>
+      </div>
+
+    <div id="continuar2" class="continuar">
+      <button onclick="mostrarExercicio(2)">Próximo exercício</button>
+    </div>
+  </div>
+
+
+  <div id="exercicio3" class="exercicio">
+
+
+    <h1 id="tituloExercicio">Contas "variáveis".</h1>
+
+    <p id="descricaoExercicio">Variáveis também podem fazer calculos dentro delas para 
+      simplificar nossa vida, tente fazer uma conta dentro de uma váriavel que resulte em 15.
+      <br>
+      <br>
+      Exemplo: var variavel = 7 + 42;
+      <br>
+      return variavel;
+    </p>
+
+    <textarea class="editorCodigo" id="editor3" rows="10" cols="50" placeholder="Digite seu código JavaScript aqui..."></textarea>
+
+    <button id="runBtn" onclick="rodarPlayground(3)">Rodar Código</button>
+
+    <div>
+      <pre id="output3"></pre>
+    </div>
+  <div id="continuar3" class="continuar">
+    <button onclick="mostrarExercicio(2)">Próximo exercício</button>
+  </div>
+</div>
+
+  <script type="module" src="../ts/main.javaScript.ts"></script>
+</body>
+</html>

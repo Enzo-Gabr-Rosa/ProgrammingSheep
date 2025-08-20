@@ -1,0 +1,92 @@
+:root {
+    --corNavbar: #8c52ff;
+    --corFonteNavbar: rgb(236, 236, 236);
+    --corFonteNavbarHover: rgb(141, 141, 141);
+    --corBotaoFacil: #A7E647;
+    --corBotaoHoverFacil: #688f2e;
+    --corBotaoMedio: #E69347;
+    --corBotaoMedioHover: #ac6d33;
+    --corBotaoDificil: #E65843;
+    --corBotaoDificilHover: #99392b;
+    --corFonteBotao: rgb(20, 20, 20);
+    --fontePrincipal: Arial;
+    --fonteBotao: Verdana, sans-serif;
+    --fonteEditorCodigo: monospace;
+}
+
+.exercicio {
+    display: none; /* Esconde tudo por padrão */
+    border: 1px solid #333;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+body {
+    font-family: var(--fontePrincipal);
+}
+
+/*Navbar*/
+.navbar {
+    background-color: var(--corNavbar);
+    padding: 30px;
+    font-family: Verdana, sans-serif;;
+}
+
+.linksNavbar > a {
+    color: var(--corFonteNavbar);
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.linksNavbar:hover {
+    color: var(--corFonteNavbarHover);
+    text-decoration: underline;
+}
+
+.listaNavbar {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.linksEsquerda {
+    margin-right: 30px;
+    float: left;
+}
+
+.linksDireita {
+    margin-left: 30px;
+    float: right;
+}
+
+/*Botao*/
+.botaoExercicio {
+    background-color: var(--corBotaoFacil);
+    color: var(--corFonteBotao);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    font-family: var(--fonteBotao);
+    box-shadow: none;
+}
+
+.botaoExercicio:hover {
+    box-shadow: 5px 5px 0px black;
+    background-color: var(--corBotaoHoverFacil);
+    
+}
+
+/*Textarea*/
+
+.editorCodigo {
+    border-radius: 10px;
+    font-family: var(--fonteEditorCodigo);
+    vertical-align: top;
+    padding: 10px;
+}
+
+.editorCodigo:focus {
+    background-color: var(--corFonteNavbar);
+}
