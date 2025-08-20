@@ -14,5 +14,5 @@ Enzo - Revisar exercícios do 2 a 3
 
 ------------------------------------------------------------------
 
-20/08 - Enzo - Adicionei o exercício 3 e fiz 2 e o 3, estão funcionando :D
+20/08 - Enzo - Adicionei o exercício 3 e montei os exercícios 2 e 3, estão funcionando :D
 
