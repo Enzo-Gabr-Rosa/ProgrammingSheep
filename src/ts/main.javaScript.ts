@@ -26,10 +26,10 @@ function mostrarExercicio(num: number): void {
 
 
 
-const editor = document.getElementById("editor") as HTMLTextAreaElement;
-const output = document.getElementById("output") as HTMLPreElement;
 
 function rodarPlayground(numEx: number):void{
+  let editor = document.getElementById("editor"+String(numEx)) as HTMLTextAreaElement;
+  let output = document.getElementById("output"+String(numEx)) as HTMLPreElement;
   let posicao = controller.pegarPosicao(numEx)
 
   try {
@@ -38,7 +38,15 @@ function rodarPlayground(numEx: number):void{
     output.textContent = String(result ?? "Código executado sem retorno");
 
     if (result === controller.exercicios[posicao].getResultado()){
-      alert("GG")
+      output.textContent = String(`
+        Correto!
+        Retorno: ${result}
+        `);
+    } else {
+      output.textContent = String(`
+        Errado :(
+        Retorno: ${result ?? "Código executado sem retorno"}
+        `)
     }
 
   } catch (error) {
